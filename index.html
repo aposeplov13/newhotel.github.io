@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Bootstrap (latest) Grid Styles Only -->
+	<!--<Deject>--><link rel="stylesheet" href="libs\bootstrap-grid\bootstrap-grid.css"><!--</Deject>-->
+	<style>@@include('libs\bootstrap-grid\bootstrap-grid.css')</style>
+	<!-- Header CSS (first screen styles from header.min.css) - inserted in the build of the project -->
+	<style>@@include('header.min.css')</style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)};function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n};function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load Fonts CSS Start -->
+	<script>
+		loadCSS( "css/fonts.min.css?ver=1.0.0", false, "all" ); // Loading fonts, if the site is located in a subfolder
+		// loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" ); // Loading fonts, if the site is at the root
+	</script>
+	<!-- Load Fonts CSS end -->
+
+	<!-- Load Custom CSS Start -->
+	<!--<Deject>--><script>loadCSS( "header.min.css?ver=1.0.0", false, "all" );</script><!--</Deject>-->
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load Custom CSS end -->
+
+	<!-- Load Custom CSS Compiled without JS Start -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+	<!-- Load Custom CSS Compiled without JS end -->
+
+	<!-- Custom Browsers Color Start -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<!-- Custom Browsers Color end -->
+</head>
+<body id="page-top">
+	<!-- header -->
+	<header class="sec-header">
+		<!-- navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+					</button>
+					<a class="navbar-brand" href="#"><em>Sunrise Hotel & Spa</em></a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#about"><em>Home</em></a></li>
+						<li><a href="#services"><em>services</em></a></li>
+						<li><a href="#pricing"><em>pricing</em></a></li>
+						<li><a href="#gallery"><em>gallery</em></a></li>
+						<li><a href="#contact"><em>contact</em></a></li>
+					</ul> 
+				</div>
+			</div>
+		</nav><!-- navbar end -->
+		<!-- carousel -->
+		<div id="myCarousel" class="carousel slide text-center slideanim" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active text-center">
+					<img src="img/carousel/carousel1.jpg" alt="" >
+				</div>
+				<div class="item">
+					<img src="img/carousel/carousel2.jpg" alt="" >
+				</div>
+				<div class="item">
+					<img src="img/carousel/carousel3.jpg" alt="" >
+				</div>
+			</div><br>
+		</div><!-- carousel end -->
+		<!-- social button -->
+		<div class="social text-center">
+			<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-facebook "></i></a>
+			<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-twitter"></i></a>
+			<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-google-plus "></i></a>
+			<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-linkedin "></i></a>
+			<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-pinterest "></i></a>
+			<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-github "></i></a><br><br><br>
+		</div><!-- social button end-->
+	</header><!-- header end-->
+	<!-- services -->
+	<div id="services" class="container sec-services">
+	 	<h3 class="text-center text-uppercase slideanim">Our services</h3><hr>
+	 	<br>
+	 	<div class="row slideanim">
+	    	<div class="col-sm-4 block">
+	    		<div class="services-wrapper">
+		      		<i class="ion ion-ios-flower"></i>
+		      		<h4>Spa</h4>
+		      		<p>With design inspired by traditional local embroidery and fabrics, this calming space is dominated by light blue colour. Intentionally sub-lit, with diffused, indirect lighting to sustain a sense of relaxation, it offers the latest in natural massage and experiences, while using organic herbs from the island. The pool area and the juice bar nearby are just two of the highlights that await you.</p>
+		    	</div>
+	    	</div>
+	    	<div class="col-sm-4 block">
+	      		<div class="services-wrapper">
+	      			<i class="ion ion-fork"></i>&nbsp<i class="ion-knife"></i>&nbsp<i class="ion-wineglass"></i>
+	      			<h4>Restaurant & Bars</h4>
+	      			<p>Adopting a modern approach to authentic Mediterranean fare, the Royal Myconian Resort’s two fine restaurants and three bars offer a range of inspired selections that emphasize purity, simplicity, authentic Mykonos specialties and seasonal flavors in a stylish ambiance with stunning views, creating a truly unique culinary experience.</p>
+	      		</div>
+	    	</div>
+	    	<div class="col-sm-4 block">
+	      		<div class="services-wrapper">
+          			<svg height="40px" id="Layer_2" style="enable-background:new 0 0 240 240;" version="1.1" viewBox="0 0 240 240" width="36px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          			<path  fill="#4298e2" d="M240,181.157c-11.124,0-16.963-4.868-21.65-8.778c-3.987-3.323-6.618-5.519-12.639-5.519c-6.018,0-8.651,2.195-12.636,5.519  c-4.69,3.91-10.526,8.778-21.653,8.778c-11.124,0-16.963-4.868-21.65-8.779c-3.984-3.322-6.618-5.518-12.636-5.518  s-8.648,2.195-12.633,5.518c-4.69,3.911-10.526,8.779-21.653,8.779c-11.124,0-16.96-4.868-21.65-8.779  c-3.984-3.322-6.615-5.518-12.633-5.518s-8.648,2.195-12.633,5.518c-4.69,3.911-10.526,8.779-21.653,8.779  c-11.124,0-16.96-4.868-21.647-8.779C8.648,169.056,6.018,166.86,0,166.86v-13.919c11.124,0,16.963,4.868,21.65,8.78  c3.984,3.322,6.615,5.517,12.63,5.517c6.018,0,8.651-2.194,12.636-5.517c4.688-3.912,10.526-8.78,21.65-8.78s16.96,4.868,21.65,8.78  c3.984,3.322,6.615,5.517,12.633,5.517s8.651-2.194,12.636-5.517c4.69-3.912,10.526-8.78,21.65-8.78s16.963,4.868,21.653,8.78  c3.984,3.322,6.615,5.517,12.633,5.517c6.021,0,8.651-2.194,12.636-5.518c4.69-3.911,10.529-8.779,21.653-8.779  c11.127,0,16.963,4.868,21.653,8.779c3.984,3.323,6.618,5.518,12.636,5.518V181.157z M188.701,72  c-16.729,0-30.29,13.466-30.29,30.073c0,16.609,13.562,30.076,30.29,30.076c16.731,0,30.293-13.467,30.293-30.076  C218.994,85.466,205.433,72,188.701,72z M110.083,107.364l14.927,8.378l-39.492,31.103c1.693,1.186,3.196,2.431,4.594,3.597  c4.148,3.459,6.888,5.744,13.154,5.744c6.264,0,9.006-2.285,13.154-5.744c4.881-4.073,10.96-9.142,22.541-9.142  c11.584,0,17.66,5.068,22.544,9.142c1.28,1.068,2.429,2.023,3.586,2.836l4.228-7.776l-25.412-41.08l-32.279-14.185l-47.871,22.595  l7.711,9.844L110.083,107.364z M240,194.082c-6.018,0-8.651-2.195-12.636-5.519c-4.69-3.911-10.526-8.779-21.653-8.779  c-11.124,0-16.963,4.868-21.653,8.779c-3.984,3.323-6.615,5.519-12.636,5.519c-6.018,0-8.648-2.195-12.633-5.518  c-4.69-3.912-10.529-8.78-21.653-8.78s-16.96,4.868-21.65,8.78c-3.984,3.322-6.618,5.518-12.636,5.518s-8.648-2.195-12.633-5.518  c-4.69-3.912-10.526-8.78-21.65-8.78s-16.963,4.868-21.65,8.78c-3.984,3.322-6.618,5.518-12.636,5.518  c-6.015,0-8.646-2.195-12.63-5.518c-4.688-3.912-10.526-8.78-21.65-8.78v13.919c6.018,0,8.648,2.195,12.633,5.518  C17.32,203.132,23.156,208,34.28,208c11.127,0,16.963-4.868,21.653-8.779c3.984-3.322,6.615-5.518,12.633-5.518  s8.648,2.195,12.633,5.518c4.69,3.911,10.526,8.779,21.65,8.779c11.127,0,16.963-4.868,21.653-8.779  c3.984-3.322,6.615-5.518,12.633-5.518s8.651,2.195,12.636,5.518c4.688,3.911,10.526,8.779,21.65,8.779  c11.127,0,16.963-4.868,21.653-8.778c3.984-3.323,6.618-5.519,12.636-5.519c6.021,0,8.651,2.195,12.639,5.519  c4.688,3.91,10.526,8.778,21.65,8.778V194.082z"/></svg>
+	      			<h4>Pool</h4>
+	      			<p>Long leisurely strolls in the gentle surf and lazy days splashing around the pool’s shimmering turquoise waters will refresh and rejuvenate you - body and soul.
+					• Large seawater pool (700m2) with Jacuzzi, lily-pad designer sun loungers, day beds
+					• Sun terraces</p>
+	      		</div>
+	    	</div>
+	  	</div>
+	  	<div class="row slideanim">
+	    	<div class="col-sm-4 block">
+	      		<div class="services-wrapper">
+	      			<i class="ion-model-s"></i>
+	      			<h4>Free Parking</h4>
+	      			<p>Free! Free private parking is available on site (reservation is not needed).</p>
+	      		</div>
+	    	</div>
+	    	<div class="col-sm-4 block">
+	      		<div class="services-wrapper">
+	      			<i class="ion-wifi"></i>
+	      			<h4>Free WiFi</h4>
+	      			<p>Free! WiFi is available in all areas and is free of charge.</p>
+	      		</div>
+	    	</div>
+	    	<div class="col-sm-4 block">
+				<div class="services-wrapper">
+					<i class="ion-android-bus"></i>
+					<h4>Airport Shuttle</h4>
+					<p>Lorem ipsum dolor sit amet..Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+				</div>
+	    	</div>
+	  	</div>
+	  	<div class="row slideanim">
+			<div class="col-sm-4 block">
+				<div class="services-wrapper">
+					<i class="ion-ios-sunny"></i>
+					<h4>Beach</h4>
+					<p>The hotel is situated directly on a 300m of beach. Curl up with the kids under a cabana by the sea, watch the most amazing sunset in Crete and relax.
+					Beach Free facilities include: Beach towels, Showers & changing cabins, Umbrellas & sun beds with soft mattresses.</p>
+				</div>
+			</div>
+	    	<div class="col-sm-4 block">
+				<div class="services-wrapper">
+					<i class="ion-android-walk"></i>
+					<h4>Sports</h4>
+					<p>• Canoes, pedal boats
+					• PADI Underwater Diving school with children, teenager and adult lessons, excursions, windsurfing and motorized watersports (nearby)s.• Morning gymnastics
+					• Aqua-aerobics
+					• Aerobics
+					• Table tennis</p>
+				</div>
+	    	</div>
+	    	<div class="col-sm-4 block">
+	      		<div class="services-wrapper">
+	      			<i class="ion-gear-a"></i>
+	      			<h4>Others services</h4>
+	      			<p>• Directly on a fine stretch of sandy beach
+					• Large landscaped pool<br>
+					• A relaxed Holiday Atmosphere<br>
+					• Atmospheric Suites, Maisonettes & Villas with luxurious eccentric overtones<br>
+					• Choice of excellent dining options & Agreco farm culinary experience<br>
+					• Tasty Corner - free kids dining<br>
+					</p>
+	     		 </div>
+	    	</div>
+	  	</div>
+	</div><!-- services end -->
+  <!--  pricing  -->
+  <div id="pricing" class="container sec-pricing">
+		<h3 class="text-center text-uppercase slideanim">Pricing</h3><hr>
+	  <div class="row slideanim">
+			<div class="col-sm-3 sec-panel">
+				<div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<h4><strong><sup>$</sup>199</strong></h4>
+					</div>
+					<div class="panel-body">
+						<h5 class="text-uppercase"><strong>night</strong></h5>
+					</div>
+					<div class="panel-footer">
+						<span class="ion-coffee"> breakfast included</span><br><br>
+						<span class="ion-ios-snowy"> Special Conditions</span><br><br>
+						<button class="btn btn-md text-uppercase">reserve</button>
+					</div>
+				</div> 
+			</div> 
+			<div class="col-sm-3 sec-panel">
+				<div class="panel panel-default text-center popular">
+					<div class="panel-heading">
+						<h4><strong><sup>$</sup>249</strong></h4>
+					</div>
+					<div class="panel-body">
+						<h5 class="text-uppercase"><strong>weekend</strong></h5>
+					</div>
+					<div class="panel-footer">
+						<span class="ion-coffee"> breakfast included</span><br><br>
+						<span class="ion-ios-snowy"> Special Conditions</span><br><br>
+						<button class="btn btn-md text-uppercase">reserve</button>
+					</div>
+				</div> 
+			</div>
+			<div class="col-sm-3 sec-panel">
+				<div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<h4><strong><sup>$</sup>1199</strong></h4>
+					</div>
+					<div class="panel-body">
+						<h5 class="text-uppercase"><strong>week</strong></h5>
+					</div>
+					<div class="panel-footer">
+						<span class="ion-coffee"> breakfast included</span><br><br>
+						<span class="ion-ios-snowy"> Special Conditions</span><br><br>
+						<button class="btn btn-md text-uppercase">reserve</button>
+					</div>
+				</div> 
+			</div> 
+			<div class="col-sm-3 sec-panel">
+				<div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<h4><strong><sup>$</sup>4999</strong></h4>
+					</div>
+					<div class="panel-body">
+						<h5 class="text-uppercase"><strong>month</strong></h5>
+					</div>
+					<div class="panel-footer">
+						<span class="ion-coffee"> breakfast included</span><br><br>
+						<span class="ion-ios-snowy"> Special Conditions</span><br><br>
+						<button class="btn btn-md text-uppercase">reserve</button>
+					</div>
+				</div> 
+			</div>
+		</div>
+	</div><!--  pricing end -->
+	<!-- gallery -->
+	<div id="gallery" class="container text-center sec-gallery">
+		<h3 class="text-uppercase slideanim">gallery</h3><hr><br>
+		<button class="btn btn-default filter-button active text-uppercase" data-filter="all" >all</button>
+		<button class="btn btn-default filter-button  text-uppercase" data-filter="rooms">rooms</button>
+		<button class="btn btn-default filter-button  text-uppercase" data-filter="fd">food & drink</button>
+		<button class="btn btn-default filter-button  text-uppercase" data-filter="pool">pool & spa</button>
+		<button class="btn btn-default filter-button  text-uppercase" data-filter="beach">beach</button>
+		<div class="row slideanim">
+			<div class="col-sm-6 col-md-3 filter rooms">
+			  	<button class="btn" data-toggle="modal" data-target="#myModal1">
+				    <div class="thumbnail">
+				      <a href="img/gallery/rooms/rooms1.jpg">
+				      <img src="img/gallery/rooms/rooms1.jpg" alt=""></a>
+				   	</div>
+			    </button>
+			    <div id="myModal1" class="modal fade" role="dialog">
+				  	<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+				    		<div class="modal-header">
+				        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+				    		</div>
+				       	 	<div class="modal-body">
+					      		<div class="thumbnail">
+					        		<img src="img/gallery/rooms/rooms1.jpg" alt="">
+					      		</div>
+				        	</div>
+				    	</div>
+				   	</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter rooms">
+		  		<button class="btn" data-toggle="modal" data-target="#myModal2">
+				    <div class="thumbnail">
+				      	<a href="img/gallery/rooms/rooms2.jpg">
+				     	 <img src="img/gallery/rooms/rooms2.jpg" alt=""></a>
+				    </div>
+			    </button>
+			    <div id="myModal2" class="modal fade" role="dialog">
+				  	<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+				    		<div class="modal-header">
+				        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+				    		</div>
+				        	<div class="modal-body">
+					      		<div class="thumbnail">
+					        		<img src="img/gallery/rooms/rooms2.jpg" alt="">
+					      		</div>
+				        	</div>
+				    	</div>
+				   	</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter rooms">
+				<button class="btn" data-toggle="modal" data-target="#myModal3">
+				    <div class="thumbnail">
+					   	<a href="img/gallery/rooms/rooms3.jpg">
+					    <img src="img/gallery/rooms/rooms3.jpg" alt=""></a>
+				    </div>
+			    </button>
+		     	<div id="myModal3" class="modal fade" role="dialog">
+			  		<div class="modal-dialog modal-lg">
+			    		<div class="modal-content">
+			    			<div class="modal-header">
+			        			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			    			</div>
+			        		<div class="modal-body">
+				      			<div class="thumbnail">
+				        			<img src="img/gallery/rooms/rooms3.jpg" alt="">
+				      			</div>
+			        		</div>
+			    		</div>
+			   		</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter rooms">
+			    <button class="btn" data-toggle="modal" data-target="#myModal4">
+				    <div class="thumbnail">
+					   	<a href="img/gallery/rooms/rooms4.jpg">
+					    <img src="img/gallery/rooms/rooms4.jpg" alt=""></a>
+				    </div>
+			    </button>
+		     	<div id="myModal4" class="modal fade" role="dialog">
+			  		<div class="modal-dialog modal-lg">
+			    		<div class="modal-content">
+			    			<div class="modal-header">
+			        			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			    			</div>
+			        		<div class="modal-body">
+				      			<div class="thumbnail">
+				        			<img src="img/gallery/rooms/rooms4.jpg" alt="">
+				      			</div>
+			        		</div>
+			    		</div>
+			   		</div>
+				</div>
+			</div>
+		</div>
+		<div class="row slideanim">
+			<div class="col-sm-6 col-md-3 filter fd">
+				<button class="btn" data-toggle="modal" data-target="#myModal5">
+					<div class="thumbnail">
+						<a href="img/gallery/food/food1.jpg">
+						<img src="img/gallery/food/food1.jpg" alt=""></a>
+					</div>
+				</button>
+				<div id="myModal5" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<div class="thumbnail">
+									<img src="img/gallery/food/food1.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter fd">
+				<button class="btn" data-toggle="modal" data-target="#myModal6">
+					<div class="thumbnail">
+						<a href="img/gallery/food/food2.jpg">
+						<img src="img/gallery/food/food2.jpg" alt=""></a>
+					</div>
+				</button>
+				<div id="myModal6" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<div class="thumbnail">
+									<img src="img/gallery/food/food2.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter fd">
+			    <button class="btn" data-toggle="modal" data-target="#myModal7">
+				    <div class="thumbnail">
+					   	<a href="img/gallery/food/food3.jpg">
+					    <img src="img/gallery/food/food3.jpg" alt=""></a>
+				    </div>
+			    </button>
+			    <div id="myModal7" class="modal fade" role="dialog">
+				  	<div class="modal-dialog modal-lg">
+				    	<div class="modal-content">
+				    		<div class="modal-header">
+				        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+				    		</div>
+				        	<div class="modal-body">
+					     		<div class="thumbnail">
+					        		<img src="img/gallery/food/food3.jpg" alt="">
+					      		</div>
+				        	</div>
+				    	</div>
+				   	</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter fd">
+			    <button class="btn" data-toggle="modal" data-target="#myModal8">
+				    <div class="thumbnail">
+					   	<a href="img/gallery/food/food4.jpg">
+					    <img src="img/gallery/food/food4.jpg" alt=""></a>
+				    </div>
+			    </button>
+			    <div id="myModal8" class="modal fade" role="dialog">
+				  	<div class="modal-dialog modal-lg">
+				    	<div class="modal-content">
+				    		<div class="modal-header">
+				        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+				    		</div>
+				        	<div class="modal-body">
+					      		<div class="thumbnail">
+					        		<img src="img/gallery/food/food4.jpg" alt="">
+					      		</div>
+				        	</div>
+				    	</div>
+				   	</div>
+				</div>
+			</div>
+		</div>	 
+		<div class="row slideanim">
+			<div class="col-sm-6 col-md-3 filter pool">
+			    <button class="btn" data-toggle="modal" data-target="#myModal9">
+				    <div class="thumbnail">
+					   	<a href="imgallery/spa/spa2.jpg">
+					    <img src="img/gallery/spa/spa1.jpg" alt=""></a>
+				    </div>
+			    </button>
+			    <div id="myModal9" class="modal fade" role="dialog">
+				  	<div class="modal-dialog modal-lg">
+				    	<div class="modal-content">
+				    		<div class="modal-header">
+				        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+				    		</div>
+				        	<div class="modal-body">
+					      		<div class="thumbnail">
+					        		<img src="img/gallery/spa/spa1.jpg" alt="">
+					      		</div>
+				        	</div>
+				    	</div>
+				   	</div>
+				</div>
+			</div>
+		  	<div class="col-sm-6 col-md-3 filter pool">
+			    <button class="btn" data-toggle="modal" data-target="#myModal_10">
+				    <div class="thumbnail">
+					   	<a href="img/gallery/spa/spa2.jpg">
+					    <img src="img/gallery/spa/spa2.jpg" alt=""></a>
+				    </div>
+			    </button>
+			    <div id="myModal_10" class="modal fade" role="dialog">
+				  	<div class="modal-dialog modal-lg">
+				    	<div class="modal-content">
+				    		<div class="modal-header">
+				        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+				    		</div>
+				        	<div class="modal-body">
+					      		<div class="thumbnail">
+					        		<img src="img/gallery/spa/spa2.jpg" alt="">
+					      		</div>
+				        	</div>
+				    	</div>
+				   	</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter  pool">
+			    <button class="btn" data-toggle="modal" data-target="#myModal_11">
+				    <div class="thumbnail">
+					   	<a href="img/gallery/spa/spa3.jpg">
+					    <img src="img/gallery/spa/spa3.jpg" alt=""></a>
+				    </div>
+			    </button>
+			    <div id="myModal_11" class="modal fade" role="dialog">
+				  	<div class="modal-dialog modal-lg">
+				    	<div class="modal-content">
+				    		<div class="modal-header">
+				        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+				    		</div>
+				        	<div class="modal-body">
+					      		<div class="thumbnail">
+					        		<img src="img/gallery/spa/spa3.jpg" alt="">
+					      		</div>
+				        	</div>
+				    	</div>
+				   	</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter pool">
+			    <button class="btn" data-toggle="modal" data-target="#myModal_12">
+				    <div class="thumbnail">
+					   	<a href="img/gallery/spa/spa4.jpg">
+					    <img src="img/gallery/spa/spa4.jpg" alt=""></a>
+				    </div>
+			    </button>
+			    <div id="myModal_12" class="modal fade" role="dialog">
+				  	<div class="modal-dialog modal-lg">
+				    	<div class="modal-content">
+				    		<div class="modal-header">
+				        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+				    		</div>
+				        	<div class="modal-body">
+					      		<div class="thumbnail">
+					        		<img src="img/gallery/spa/spa4.jpg" alt="">
+					      		</div>
+				        	</div>
+				    	</div>
+				   	</div>
+				</div>
+			</div>
+		</div>
+		<div class="row slideanim">
+			<div class="col-sm-6 col-md-3 filter pool">
+			    <button class="btn" data-toggle="modal" data-target="#myModal_13">
+				    <div class="thumbnail">
+					   	<a href="img/gallery/spa/spa5.jpg">
+					    <img src="img/gallery/spa/spa5.jpg" alt=""></a>
+				    </div>
+			    </button>
+			    <div id="myModal_13" class="modal fade" role="dialog">
+				  	<div class="modal-dialog modal-lg">
+				    	<div class="modal-content">
+				    		<div class="modal-header">
+				        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+				    		</div>
+				        	<div class="modal-body">
+					      		<div class="thumbnail">
+					        		<img src="img/gallery/spa/spa5.jpg" alt="">
+					      		</div>
+				        	</div>
+				    	</div>
+				   	</div>
+				</div>
+			</div>
+		  	<div class="col-sm-6 col-md-3 filter pool">
+			    <button class="btn" data-toggle="modal" data-target="#myModal_14">
+				    <div class="thumbnail">
+					   	<a href="img/gallery/spa/spa6.jpg">
+					    <img src="img/gallery/spa/spa6.jpg" alt=""></a>
+				   	</div>
+			    </button>
+			    <div id="myModal_14" class="modal fade" role="dialog">
+				  	<div class="modal-dialog modal-lg">
+				    	<div class="modal-content">
+				    		<div class="modal-header">
+				        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+				    		</div>
+				        	<div class="modal-body">
+					      		<div class="thumbnail">
+					        		<img src="img/gallery/spa/spa6.jpg" alt="">
+					      		</div>
+				        	</div>
+				    	</div>
+				   	</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter  pool">
+			    <button class="btn" data-toggle="modal" data-target="#myModal_15">
+				    <div class="thumbnail">
+					   	<a href="img/gallery/spa/spa7.jpg">
+					    <img src="img/gallery/spa/spa7.jpg" alt=""></a>
+				    </div>
+			    </button>
+			    <div id="myModal_15" class="modal fade" role="dialog">
+				  	<div class="modal-dialog modal-lg">
+				    	<div class="modal-content">
+				    		<div class="modal-header">
+				        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+				    		</div>
+				        	<div class="modal-body">
+					      		<div class="thumbnail">
+					        		<img src="img/gallery/spa/spa7.jpg" alt="">
+					      		</div>
+				        	</div>
+				    	</div>
+				   	</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter pool">
+			    <button class="btn" data-toggle="modal" data-target="#myModal_16">
+				    <div class="thumbnail">
+					   	<a href="img/gallery/spa/spa8.jpg">
+					    <img src="img/gallery/spa/spa8.jpg" alt=""></a>
+				    </div>
+			    </button>
+			    <div id="myModal_16" class="modal fade" role="dialog">
+				  	<div class="modal-dialog modal-lg">
+				    	<div class="modal-content">
+				    		<div class="modal-header">
+				        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+				    		</div>
+				        	<div class="modal-body">
+					      		<div class="thumbnail">
+					        		<img src="img/gallery/spa/spa8.jpg" alt="">
+					      		</div>
+				        	</div>
+				    	</div>
+				   	</div>
+				</div>
+			</div>
+		</div>
+		<div class="row slideanim">
+			<div class="col-sm-6 col-md-3 filter beach">
+			    <button class="btn" data-toggle="modal" data-target="#myModal_17">
+				    <div class="thumbnail">
+					   	<a href="img/gallery/beach/beach1.jpg">
+					    <img src="img/gallery/beach/beach1.jpg" alt=""></a>
+				    </div>
+			    </button>
+			    <div id="myModal_17" class="modal fade" role="dialog">
+				  	<div class="modal-dialog modal-lg">
+				    	<div class="modal-content">
+				    		<div class="modal-header">
+				        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+				    		</div>
+				        	<div class="modal-body">
+					      		<div class="thumbnail">
+					        		<img src="img/gallery/beach/beach2.jpg" alt="">
+					      		</div>
+				        	</div>
+				    	</div>
+				   	</div>
+				</div>
+			</div>
+		  	<div class="col-sm-6 col-md-3 filter beach">
+			    <button class="btn" data-toggle="modal" data-target="#myModal_18">
+				    <div class="thumbnail">
+					   	<a href="img/gallery/beach/beach2.jpg">
+					    <img src="img/gallery/beach/beach2.jpg" alt=""></a>
+				    </div>
+			    </button>
+			    <div id="myModal_18" class="modal fade" role="dialog">
+				  	<div class="modal-dialog modal-lg">
+				    	<div class="modal-content">
+				    		<div class="modal-header">
+				        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+				    		</div>
+				        	<div class="modal-body">
+					      		<div class="thumbnail">
+					        		<img src="img/gallery/beach/beach2.jpg" alt="">
+					      		</div>
+				        	</div>
+				    	</div>
+				   	</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter beach">
+			    <button class="btn" data-toggle="modal" data-target="#myModal_19">
+				    <div class="thumbnail">
+					   	<a href="img/gallery/beach/beach3.jpg">
+					    <img src="img/gallery/beach/beach3.jpg" alt=""></a>
+				    </div>
+			    </button>
+			    <div id="myModal_19" class="modal fade" role="dialog">
+				  	<div class="modal-dialog modal-lg">
+				    	<div class="modal-content">
+				    		<div class="modal-header">
+				        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+				    		</div>
+				        	<div class="modal-body">
+					      		<div class="thumbnail">
+					        		<img src="img/gallery/beach/beach3.jpg" alt="">
+					      		</div>
+				        	</div>
+				    	</div>
+				   	</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter beach">
+			    <button class="btn" data-toggle="modal" data-target="#myModal_20">
+				    <div class="thumbnail">
+					   	<a href="img/gallery/beach/beach4.jpg">
+					    <img src="img/gallery/beach/beach4.jpg" alt=""></a>
+				    </div>
+			    </button>
+			    <div id="myModal_20" class="modal fade" role="dialog">
+				  	<div class="modal-dialog modal-lg">
+				    	<div class="modal-content">
+				    		<div class="modal-header">
+				        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+				    		</div>
+				        	<div class="modal-body">
+					      		<div class="thumbnail">
+					        		<img src="img/gallery/beach/beach4.jpg" alt="">
+					      		</div>
+				        	</div>
+				    	</div>
+				   	</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- gallery end -->
+	<!-- contact -->
+	<div id="contact" class="container slideanim sec-contact">
+		<h3 class="text-center text-uppercase slideanim ">Contact Details</h3>
+		<hr/>
+		<div class="row">		
+			<div class="col-sm-4 sec-footer">
+				<div class="wrap">
+					<h4>We are social</h4>
+					<p>Aliquam tempus ante placerat, consectetur tellus nec, porttitor nulla. </p>
+					<button class="btn btn-md">facebook</button>
+					<button class="btn btn-md">twitter</button>
+					<button class="btn btn-md">google+</button>
+				</div>
+			</div>
+			<div class="col-sm-4 sec-footer">
+				<div class="wrap">
+					<h4>Quick Contact</h4>
+					<p><strong>Email:</strong>info@sunrise-spa.com</p>
+					<p><strong>Call:</strong> +09-88-99-77-55 </p>
+					<p><strong>Skape:</strong>sunrise-spa</p>
+				</div>
+			</div>
+			<div class="col-sm-4 sec-footer">
+				<div class="wrap">
+					<h4>Address : </h4>
+					<p>230/45 , New way Lane ,United States </p>
+					<p><small>© 2015 YourDomain | by DesignBootstrp</small></p>
+				</div>
+			</div>
+		</div>
+	</div><!-- contact end-->
+	<!-- Optimized loading JS Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.min.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Optimized loading JS end -->
+
+	
+  <link rel="stylesheet" href="libs/bootstrap-full/css/bootstrap.min.css">
+	<script src="libs/jquery/jquery.min.js"></script>
+	<script src="libs/bootstrap-full/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="header.min.css">
+  
+
+</body>
+</html>
